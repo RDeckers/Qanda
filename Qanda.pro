@@ -13,16 +13,16 @@ CONFIG   += console
 CONFIG   -= app_bundle
 
 TEMPLATE = app
+INCLUDEPATH += $$PWD/headers/
 
-
-SOURCES += main.cpp \
-    qanda.cpp \
-    instrument.cpp
+SOURCES += src/main.cpp \
+    src/qanda.cpp \
+    src/instrument.cpp
 
 HEADERS += \
-    qanda.h \
-    instrument.h
+    headers/qanda.h \
+    headers/instrument.h
 
 DISTFILES += \
-    api_key.txt \
+    resources/api_key.txt \
     .gitignore

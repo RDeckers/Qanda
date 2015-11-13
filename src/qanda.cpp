@@ -1,4 +1,4 @@
-#include "qanda.h"
+#include <qanda.h>
 #include <QUrl>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/QNetworkReply>
@@ -10,7 +10,7 @@ Qanda::Qanda()
   connect(this, SIGNAL(finished(QNetworkReply*)), this, SLOT(reply_finished(QNetworkReply*)));
   authorization_header_pair[0] = QByteArray("Authorization");
   authorization_header_pair[1] = QByteArray("Bearer ")+QByteArray(
-      #include "api_key.txt" //this should be a file containing a quoted string
+      #include "../resources/api_key.txt" //this should be a file containing a quoted string
       );
 }
 

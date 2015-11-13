@@ -1,5 +1,4 @@
-#include "instrument.h"
-
+#include <instrument.h>
 Instrument::Instrument()
 {
 

@@ -5,7 +5,6 @@
 #-------------------------------------------------
 
 QT       += core network
-
 QT       -= gui
 
 TARGET = Qanda
@@ -16,12 +15,18 @@ TEMPLATE = app
 INCLUDEPATH += $$PWD/headers/
 
 SOURCES += src/main.cpp \
-    src/qanda.cpp \
-    src/instrument.cpp
+    src/instrument.cpp \
+    src/interfacer.cpp \
+    src/account.cpp \
+    src/qblocker.cpp \
+    src/qmarkedreply.cpp
 
 HEADERS += \
-    headers/qanda.h \
-    headers/instrument.h
+    headers/instrument.h \
+    headers/interfacer.h \
+    headers/account.h \
+    headers/qblocker.h \
+    headers/qmarkedreply.h
 
 DISTFILES += \
     resources/api_key.txt \

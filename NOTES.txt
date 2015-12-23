@@ -1,0 +1,7 @@
+-Implement all features
+-Check all types are properlly sized w.r.t. the JSON respones
+-Http Error Checking
+-Research a good interface for returning collections of new'd objects.
+-Uniformity in API (e.g. Interface.get_all_accounts vs. Account::get_all_accounts(interface) & the same for instruments)
+  -Uniformity with the rest of Qt (name() vs get_name(), captilization?)
+-Twitch plays Oanda?

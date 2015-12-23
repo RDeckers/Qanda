@@ -30,4 +30,5 @@ HEADERS += \
 
 DISTFILES += \
     resources/api_key.txt \
-    .gitignore
+    .gitignore \
+    NOTES.txt

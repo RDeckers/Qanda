@@ -8,11 +8,13 @@ int main(int argc, char *argv[])
   Interfacer interfacer(InterfaceType::Practice);
   auto accounts = Account::get_all_accounts(&interfacer);
   for(int i = 0; i < accounts.length(); i++){
-    accounts[i].data()->get_details();
-    qDebug() << *accounts[i].data();
+    accounts[i]->get_details();
+    qDebug() << *accounts[i];
   }
-  Account::request_accounts(&interfacer);
-
+  auto instruments = accounts[0]->get_instruments();
+  qDebug() << "Instrument count:" << instruments.length();
+  instruments = accounts[1]->get_instruments();
+  qDebug() << "Instrument count:" << instruments.length();
   //interfacer.get_instrument("EUR_SEK");
   //return 0;
   return a.exec();

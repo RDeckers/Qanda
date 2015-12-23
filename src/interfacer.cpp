@@ -38,6 +38,7 @@ void Interfacer::initialize_base_url(InterfaceType interface_type){
 
 QMarkedReply* Interfacer::make_new_request(QString path, bool use_authorization){
   QUrl url = QUrl(this->base_url+path);
+  qDebug() << "Requesting: " << url;
   QNetworkRequest request(url);
   if(use_authorization)
     request.setRawHeader(authorization_header_pair[0], authorization_header_pair[1]);
